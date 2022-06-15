@@ -19,7 +19,7 @@ evil-winrm -i <ip> -u user -p password
 - SSH crack
 
 ```
-hydra -t 4 -L user.list -P password.list <ip> ssh -v
+hydra -t 4 -L user.list -P password.list <ip> ssh -V
 ```
 
 - RDP crack

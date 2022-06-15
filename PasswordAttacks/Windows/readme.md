@@ -166,3 +166,16 @@ Is used by: Internet Explorer, Google Chrome, Outlook, RDP, Credential Manager.
 ##### *Pass-the-Hash*
 
 ```evil-winrm -i <ip>  -u  <user> -H "<hash>"```
+
+### Credential Hunting in Windows
+
+> Credential Hunting is the process of performing detailed searches across the file system and through various applications to discover credentials. 
+
+- Windows Search
+- Lazagne
+
+```lazagne.exe all```
+
+- findstr
+
+```findstr /SIM /C:"password" *.txt *.ini *.cfg *.config *.xml *.git *.ps1 *.yml```
